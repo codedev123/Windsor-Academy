@@ -1,0 +1,1722 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    background-color: #f16331;
+    height: 80px;
+}
+
+img.logo{
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    width: 60px;
+    border-radius: 50%;
+}
+
+nav.navbar ul{
+    float: right;
+    margin-right: 25px;
+    font-family: sans-serif;
+}
+nav.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px ;
+    font-family: sans-serif;
+}
+nav.navbar ul li a.navitems{
+    color: #ece2df;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    padding: 5px 0;
+}
+nav.navbar ul li a.navitems:before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 2px;
+    background-color: #ece2df;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+nav.navbar ul li a.navitems:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#cancel{
+    display: none;
+    font-size: 30px;
+    line-height: 80px;
+    color: #ece2df;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#btn{
+    display: none;
+    font-size: 30px;
+    line-height: 80px;
+    color: #ece2df;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    /* display: none; */
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    transform: scale(3);
+    opacity: 0;
+    border: none;
+}
+
+
+.bg{
+    position: relative;
+    background-image: url("school\ ready.jpg");
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    height: 700px;
+    width: 100%;
+
+}
+
+
+.bg h1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    z-index: 1;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold1; 
+}
+
+.bg p{
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.bg button{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #f16331;
+    z-index: 1;
+    border: 2px solid #f16331;
+    margin-top: 10px;
+}
+
+.bg button:hover{
+    background-color: white;
+    color: #f16331;
+}
+
+
+
+div#Index{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction: row;
+   margin-top: 5%;
+   background-color: #ece2df;
+}
+
+div#Index div img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+div.imgdiv{
+    width: 500px;
+    margin: 2%;
+}
+
+div.writeupdiv{
+    width: 500px;
+    margin: 2%;
+    font-family: sans-serif;
+}
+
+p.paragraph{
+    line-height: 28px;
+}
+
+.body{
+    background-color: #f16331;
+}
+.title{
+    color: #f16331;
+}
+
+.club-grid{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0rem 5rem;
+    
+}
+
+.card{
+    background-color: #fff;
+    /*text-align: center;*/
+    border-radius: 5px;
+    
+}
+
+.card-heading{
+    font-size: 3rem;
+    color: #333;
+    margin: 3rem 0rem 1rem 5rem;
+    font-family: sans-serif;
+    margin-top: 5px;
+    
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content{
+    padding: 18px;
+}
+
+p.name{
+    font-size: 35px;
+    font-weight: bold;
+    color: #ff8500;
+    margin: 10px 0px;
+    font-family: sans-serif;
+}
+
+p.description{
+    color: #333;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.btn:hover{
+    background-color: #ece2df;
+    color: #f16331;
+}
+
+.btn{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 19px;
+    cursor: pointer;
+    background-color: #f16331;
+    z-index: 1;
+    border: 2px solid #f16331;
+    margin-top: 10px;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
+
+.card-heading-2{
+  font-size: 3rem;
+  color: #ff8500;
+  margin: 3rem 0rem 1rem 5rem;
+  font-family: sans-serif;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.grid2{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 5rem 5rem;
+    background-color: #ece2df;
+
+}
+
+
+.card1{
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card2{
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.card3{
+    background-color: #fff;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.b-card-sub{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ff8500;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.b-card-subi{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 1rem;
+    margin-right: 15px;
+    margin-left: 15px;
+    line-height: 30px;
+
+}
+
+.grid2 img{
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.contact-section{
+    background-color: #F89880;
+    padding: 3rem ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.heading{
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.address{
+    font-family: sans-serif;
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #232222;
+}
+
+.contact-number{
+    font-family: sans-serif;
+    color: #232222;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 20px;
+}
+
+.contact-email{
+    font-family: sans-serif;
+    color: #232222;
+    font-size: 20px;
+}
+
+.line{
+    height: 2px;
+    width: 210px;
+    background-color: #4b4a4a83;
+    margin-top: 2rem;
+}
+
+.form-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form input{
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 80%;
+    /* outline: none; */
+    font-size: 1rem;
+}
+
+.contact-writeup{
+
+}
+
+
+
+.btn-form{
+    font-family: sans-serif;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+
+}  
+
+.message-form{
+    height: 150px;
+    outline: #333;
+}
+
+.message-frm{
+    height: 50px;
+    outline: #333;
+}
+
+
+.btn-form:hover{
+    cursor: pointer;
+    background-color: #ece2df;
+}
+
+.grid-t1{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    padding: 5rem 5rem;
+}
+
+.grid-title{
+    font-family: sans-serif;
+    font-size: 2.6rem;
+    color: #232222;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.grid-t1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.big-footer{
+    display: flex;
+    background-color: #F89880;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footera{
+    width: 500px;
+}
+
+.footerb{
+    width: 500px;
+}
+
+.h3{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.p{
+    font-family: sans-serif;
+    line-height: 27px;
+    font-weight: bolder;
+    width: 350px;
+    margin-right: 150px;
+}
+
+.sm-icon{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sm-icon i.fa-brands{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.h{
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    width: 300px;
+    line-height: 27px;
+}
+
+div.footerb a{
+    color: black;
+    text-decoration: none;
+}
+
+div.footerb a:hover{
+    color: #fff;
+}
+
+
+.copy{
+    font-family: sans-serif;
+    margin-left: 130px;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+.di{
+    background-color: #F89880;
+    border-top: 1px solid white;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.div-head{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 60px;
+    color: #ff8500;
+    padding-bottom: 30px;
+}
+
+.div-h{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 50px;
+}
+
+.div-div{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 5rem 5rem;
+}
+
+.d1{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+}
+
+div.div-card img{
+    width: 100%;
+    height: 50%;
+}
+
+.div-p{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    width: 270px;
+}
+
+.div-desc{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    line-height: 30px;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+a.d1:hover{
+    color: #ff8500;
+}
+/*Where the Index page ends*/
+
+
+
+
+
+
+
+
+/*This is where we style the About page*/
+.banner{
+    position: relative;
+    background-image: url("roof1\ -\ Copy.png");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-banner{
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+div#About{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 5%;
+    background-color: #ece2df;
+}
+
+div.about-write{
+    width: 500px;
+    font-family: sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p.about-p{
+    line-height: 28px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+h2.about-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    width: 700px;
+    line-height: 70px;
+}
+
+div.about-btn button{
+    color: white;
+    background-color: #ff8500;
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+div.about-writeup{
+    width: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+div.about-btn button:hover{
+    background-color: #f16331;
+    color: white;
+}
+
+
+.history-title{
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+   /* padding-top: 100px;*/
+    background-color: #F89880;
+    padding-top: 50px;
+}
+
+.history-p{
+    font-family: sans-serif;
+    font-weight: bolder;
+    width: 500px;
+    line-height: 25px;
+}
+
+
+div.history-foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 2%;
+    background-color: #F89880;
+    padding-bottom: 5%;
+}
+
+div.historya{
+    width: 600px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+div.history-img{
+    width: 600px;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+div.history-img img{
+    width: 100%;
+}
+
+h2.why-title{
+    font-family: sans-serif;
+    color: #232222;
+    font-size: 2.5rem;
+    padding-left: 5px;
+    font-weight: bold;
+    background-color: #ece2df;
+    padding-top: 5rem;
+    padding-left: 5rem;
+
+}
+
+div.why-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 2rem 5rem 5rem 5rem;
+    background-color: #ece2df;
+    
+}
+
+div.grid-card1{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 2rem 0rem;
+}
+
+div.grid-card2{
+     background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 2rem 0rem;
+}
+
+div.grid-card3{
+     background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 2rem 0rem;
+}
+
+
+
+.grid-p{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ff8500;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.grid-p1{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 1rem;
+    margin-right: 15px;
+    margin-left: 15px;
+    line-height: 30px;
+
+}
+
+div.grid-card1 img{
+     width: 60px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: auto;
+}
+
+div.grid-card2 img{
+     width: 60px;
+    height: 40x;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 5px;
+    margin: auto;
+}
+
+div.grid-card3 img{
+     width: 60px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: auto;
+}
+
+
+.big-footer{
+    display: flex;
+    background-color: #F89880;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footera{
+    width: 500px;
+}
+
+.footerb{
+    width: 500px;
+}
+
+.h3{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.p{
+    font-family: sans-serif;
+    line-height: 27px;
+    font-weight: bolder;
+    width: 350px;
+    margin-right: 150px;
+}
+
+.sm-icon{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sm-icon i.fa-brands{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.h{
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    width: 300px;
+    line-height: 27px;
+}
+
+div.footerb a{
+    color: black;
+    text-decoration: none;
+}
+
+div.footerb a:hover{
+    color: #fff;
+}
+
+
+.copy{
+    font-family: sans-serif;
+    margin-left: 130px;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+.di{
+    background-color: #F89880;
+    border-top: 1px solid white;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.div-head{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 60px;
+    color: #ff8500;
+    padding-bottom: 30px;
+}
+
+.div-h{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 50px;
+}
+
+.div-div{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 5rem 5rem;
+}
+
+.d1{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+}
+
+div.div-card img{
+    width: 100%;
+    height: 50%;
+}
+
+.div-p{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    width: 270px;
+}
+
+.div-desc{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    line-height: 30px;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+a.d1:hover{
+    color: #ff8500;
+}
+
+
+
+
+/*This is when we style the Contact page*/
+
+.contact-fill{
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #ff8500;
+}
+
+
+button.btn-form{
+    background-color: #ff8500;
+    color: white;
+}
+
+button.btn-form:hover{
+    background-color: #f16331;
+    color: white;
+}
+
+
+.contact-form{
+    align-items: center;
+    padding-left: 450px;
+    padding-top: 100px;
+    width: 1250px;
+}
+
+
+.contact-card{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0rem 5rem;
+}
+
+.contact-content1{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px #333;
+}
+
+.contact-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /*padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;*/
+}
+
+.contact-subtitle{
+    font-family: sans-serif;
+    font-weight: bold;
+     padding-left: 10px;
+     font-size: 20px;
+      padding-bottom: 10px;
+}
+
+.contact-p{
+    font-family: sans-serif;
+     padding-left: 10px;
+     line-height: 30px;
+}
+
+.card-info-div{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-info-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.card-info{
+
+}
+
+.line7{
+    width: 35px;
+    height: 2px;
+    background-color: #ff8500;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.line-title{
+    display: flex;
+    justify-content: start;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+/*This is where the Contact Page ends*/
+
+
+/*This is where the Project Page starts*/
+
+
+.card-head-div{
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding-left: 79px;
+    font-weight: bolder;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: #333;
+    line-height: 50px;
+}
+
+
+.new-div-title{
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    width: 1000px;
+}
+
+
+/*This is where the Project Page ends*/
+
+
+/*This is where the Blog Page starts*/
+
+.blog-h1{
+    font-family: sans-serif;
+    font-size: 3rem;
+    
+    
+}
+
+.line-9{
+    height: 5px;
+    width: 210px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.blog-title-container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.club-blog-grid{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0rem 5rem;
+    padding-top: 60px;
+}
+
+div.card-blog img{
+     width: 100%;
+    height: 300px;
+}
+
+.card-blog{
+     background-color: #fff;
+    /*text-align: center;*/
+    border-radius: 5px;
+}
+
+.blog-name{
+    font-family: sans-serif;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center
+}
+
+
+.blog-p{
+    font-family: sans-serif;
+    padding-top: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.btn-blog{
+   color: white;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 19px;
+    cursor: pointer;
+    background-color: #f16331;
+    z-index: 1;
+    border: 2px solid #f16331;
+    margin-top: 10px;
+}
+
+.blog-head{
+    /*align-self: center;*/
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+
+.blog-btn-div{
+    display: flex;
+    justify-content: center;
+}
+
+.card-blog:hover{
+    background-color: #ece2df;
+    padding: 1rem;
+
+}
+
+.btn-blog:hover{
+    background-color: white;
+    color: #ff8500;
+}
+/* responsiveness */
+@media(max-width:1118px){
+    img.logo{
+        left: 8%;
+    }
+}
+
+@media(max-width:944px){
+    img.logo{
+        left: 6%;
+        top: 20px;
+        width: 50px;
+    }
+    nav.navbar ul li a.navitems{
+        font-size: 17px;
+    }
+}
+@media(max-width:860px){
+    #btn{
+        display: block;
+    }
+
+    .club-blog-grid{
+        display: grid;
+        /*padding: 10px;*/
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0rem 1rem;
+        padding-top: 30px;
+    }
+    nav.navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #34495e;
+        top: 80px;
+        align-items: center;
+        transition: all 0.5s;
+        text-align: center;
+        left: -100%;
+    }
+    nav.navbar ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    nav.navbar ul li a.navitems{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    } 
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+
+/*This is where we targetted the background layer*/
+    .div-div{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 5rem 5rem;
+    }
+
+    .club-grid{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0rem 2rem;
+        
+    }
+
+
+    .form input{
+        margin: 0.5rem 0;
+        width: 100%;
+        /* outline: none; */
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media(max-width:768px){
+    .bg h1{
+        font-size: 2.5rem;
+    }
+
+    .bg p{
+        font-size: 2rem;
+    }
+
+    .bg{
+        height: 500px;
+    }
+
+    .bg button{
+        padding: 20px;
+    }
+
+    .div-h{
+        font-size: 1.5rem !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        line-height: 25px !important;
+    }
+
+    .div-div{
+       /*padding: 5px;*/
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px;
+        padding: 2rem 2rem;
+        display: grid ;
+    }
+
+    .div-p{
+        font-size: 1.5rem;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    
+    .div-desc{
+        font-size: 1.2rem;
+        line-height: 20px;
+        padding-bottom: 5px;
+    }
+
+    .d1{
+        text-decoration: none;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        line-height: 20px;
+        font-weight: bolder;
+    }
+
+    .card-heading{
+        font-size: 2rem;
+        color: #333;
+        margin: 3rem 0rem 1rem 5rem;
+        font-family: sans-serif;
+        margin-top: 5px;
+        
+    }
+    
+    .club-grid{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0rem 2rem;
+        
+    }
+
+    .grid2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 3rem 3rem;
+        
+        }
+
+        .form input{
+            margin: 0.5rem 0;
+            width: 100%;
+            /* outline: none; */
+            font-size: 1rem;
+        }
+
+        .grid-t1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3px;
+            padding: 1rem 1rem;
+        }
+    
+        .grid-t1 img{
+            width:  150px;
+            height: 150px;
+        }
+
+
+        .footera{
+            width: 300px;
+        }
+        
+        .footerb{
+            width: 300px;
+        }
+
+        .p{
+            font-family: sans-serif;
+            line-height: 27px;
+            font-weight: bolder;
+            width: 350px;
+            margin-right: 150px;
+        }
+
+
+        .copy{
+            margin-left: 50px;
+            line-height: 20px;
+        }
+        
+        .di{
+            background-color: #F89880;
+            border-top: 1px solid white;
+            padding-bottom: 3rem;
+            padding-top: 5rem;
+        }
+}
+
+@media(max-width:430px){
+
+    .card-head-div{
+        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        line-height: 40px;
+    }
+
+    .blog-h1{
+        font-size: 2rem;
+    }
+
+    .club-blog-grid{
+        display: grid;
+        /*padding: 10px;*/
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin: 0rem 1rem;
+        padding-top: 30px;
+    }
+
+    div.about-write{
+        width: 350px;
+        font-family: sans-serif;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    h2.why-title{
+        font-family: sans-serif;
+        color: #232222;
+        font-size: 2rem;
+        padding-left: 2px;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        width: 400px;
+    }
+    div.why-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        padding: 1rem 2rem 2rem 1rem;
+        background-color: #ece2df;
+    
+    }
+
+    div.grid-card1{
+    width: 350px;
+    padding: 2rem 0rem;
+}
+
+.contact-card{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0rem 2rem;
+}
+
+.contact-form{
+    align-items: start;
+    padding-left: 10px;
+    padding-top: 50px;
+    width: 370px;
+}
+
+div.grid-card2{
+    width: 350px;
+    padding: 2rem 0rem;
+}
+
+div.grid-card3{
+     background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 2rem 0rem;
+}
+
+   
+    h2.about-title{
+        font-size: 1.5rem;
+        width: 350px;
+        line-height: 70px;
+    }
+    div.about-writeup{
+        width: 350px;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 10%;
+    }
+    .history-p{
+        font-family: sans-serif;
+        font-weight: bolder;
+        width: 360px;
+        line-height: 25px;
+    }
+
+    .bg h1{
+        font-size: 2rem;
+    }
+
+    .bg p{
+        font-size: 1.5rem;
+    }
+
+    .bg{
+        height: 350px;
+    }
+
+    .bg button{
+        padding: 10px;
+    }
+
+    .div-h{
+        font-size: 1rem !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        line-height: 20px !important;
+    }
+
+    .div-div{
+        /*padding: 5px;*/
+         grid-template-columns: repeat(1, 1fr) !important;
+         gap: 5px;
+         padding: 1rem 1rem;
+         display: grid;
+     }
+    
+     .div-p{
+        font-size: 1.5rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .div-desc{
+        font-size: 1rem;
+        line-height: 20px;
+        padding-bottom: 5px;
+    }
+
+    .d1{
+        text-decoration: none;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        line-height: 20px;
+        font-weight: bolder;
+    }
+
+    .card-heading{
+        font-size: 2rem;
+        color: #333;
+        margin: 1rem;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .club-grid{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 1rem;
+    }
+
+    p.name{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .btn{
+        padding: 10px;
+    }
+
+    .card-heading-2{
+        font-size: 1.5rem;
+        margin: 1rem 0rem 1rem 1rem;
+        text-align: center;
+      }
+    
+
+    .grid2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 2rem 2rem;
+    }
+
+    .contact-section{
+        padding: 1.5rem ;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-number{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 20px;
+    }
+    
+    .contact-email{
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .form input{
+        margin: 0.5rem 0;
+        width: 100%;
+        /* outline: none; */
+        font-size: 1rem;
+    }
+
+    .grid-t1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+        padding: 1rem 1rem;
+    }
+
+    .grid-t1 img{
+        width:  150px;
+        height: 150px;
+    }
+
+    .footerb{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+    @media(max-width:350px){
+        .heading{
+            font-size: 2rem;
+        }
+
+        .address{
+            font-size: 15px;
+        }
+        
+        .contact-number{
+            font-size: 15px;
+        }
+        
+        .contact-email{
+            font-size: 15px;
+        }
+        
+        .grid-t1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            padding: 1rem 1rem;
+        }
+    
+        .grid-t1 img{
+            width:  100px;
+            height: 100px;
+        }
+
+
+        .footera{
+            width: 300px;
+        }
+        
+        .footerb{
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .p{
+            font-family: sans-serif;
+            line-height: 27px;
+            font-weight: bolder;
+            width: 300px;
+            margin-right: 150px;
+        }
+
+
+        .copy{
+            margin-left: 50px;
+            line-height: 20px;
+        }
+        
+        .di{
+            background-color: #F89880;
+            border-top: 1px solid white;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+    }
